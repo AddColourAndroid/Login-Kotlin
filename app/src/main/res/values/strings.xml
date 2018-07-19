@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Login Kotlin</string>
+
+    <!-- TITLE -->
+    <string name="git_repo_title">Git Repo</string>
+    <string name="login_title">Login</string>
+    <string name="register_title">Register</string>
+
 </resources>
