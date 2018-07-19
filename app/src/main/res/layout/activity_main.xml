@@ -9,14 +9,9 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
-        <include
-            android:id="@+id/contentToolBar"
-            layout="@layout/toolbar" />
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/contentToolBar"
             android:padding="@dimen/padding_16">
 
             <Button
