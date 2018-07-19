@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.View.OnClickListener
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity(), OnClickListener {
 
@@ -19,9 +20,21 @@ class MainActivity : AppCompatActivity(), OnClickListener {
     }
 
     private fun initialize() {
+
         mBinding?.contentToolBar?.title = getString(R.string.git_repo_title)
+
+        mBinding?.btnLogin?.setOnClickListener(this)
+        mBinding?.btnRegister?.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
+
+        when (v?.id) {
+            R.id.btnLogin -> {
+            }
+
+            R.id.btnRegister -> {
+            }
+        }
     }
 }
