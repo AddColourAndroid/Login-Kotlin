@@ -11,8 +11,8 @@ class PreferencesHelper {
         val TAG = PreferencesHelper::class.java.simpleName
         private val PREFERENCES = "LOGIN_KOTLIN_PREFS"
 
-        private val PREFS_KEY_USERNAME = "KEY_USERNAME"
-        private val PREFS_KEY_PASSWORD = "KEY_PASSORD"
+        private val PREF_KEY_USERNAME = "KEY_USERNAME"
+        private val PREF_KEY_PASSWORD = "KEY_PASSORD"
 
         private fun getSharedPreferences(context: Context): SharedPreferences {
             return context.getSharedPreferences(PREFERENCES, Context.MODE_PRIVATE)
@@ -32,22 +32,22 @@ class PreferencesHelper {
         }
 
         fun getUsername(context: Context): String? {
-            return getStringPreference(context, PREFS_KEY_USERNAME)
+            return getStringPreference(context, PREF_KEY_USERNAME)
         }
 
         fun setUsername(context: Context, username: String?) {
             if (username != null) {
-                setStringPreference(context, PREFS_KEY_USERNAME, username)
+                setStringPreference(context, PREF_KEY_USERNAME, username)
             }
         }
 
         fun getPassword(context: Context): String? {
-            return getStringPreference(context, PREFS_KEY_PASSWORD)
+            return getStringPreference(context, PREF_KEY_PASSWORD)
         }
 
         fun setPassword(context: Context, password: String?) {
             if (password != null) {
-                setStringPreference(context, PREFS_KEY_PASSWORD, password)
+                setStringPreference(context, PREF_KEY_PASSWORD, password)
             }
         }
     }
